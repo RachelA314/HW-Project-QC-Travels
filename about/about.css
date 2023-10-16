@@ -1,1 +1,639 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
+  padding-bottom: 50px;
+  font-size:22px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  position: fixed;
+  background-color: black;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 0;
+  transition: all 0.3s ease-in-out;
+  height: 85px;
+}
+.nav .container h1.logo {
+  margin-top: 0.5%;
+}
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.nav.active {
+  background-color: #a3def7;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav.active a {
+  color: #000;
+}
+
+.nav.active .container {
+  padding: 10px 0;
+}
+
+.nav a.current,
+.nav a:hover {
+  color: #a3def7;
+  font-weight: bold;
+}
+
+.nav.active a.current,
+.nav.active a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+
+div.hero{
+  position: scroll;
+}
+
+.About {
+  background-image: url('https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2023/05/10054553/12-Flexible-Companies-That-Help-Pay-for-Your-Vacation.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 40vh;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  margin-bottom: 20px;
+  z-index: -2;
+  font-size: 20px;
+}
+
+.About::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+
+.aboutp{
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 5vw;
+  line-height: 30px;
+  letter-spacing: 1.2px;
+  margin-top: 10vh; /*Change px vals to vw or vh too to make them relative to screen size!*/
+}
+
+.aboutp h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 27px;
+}
+
+.aboutp p{
+  font-size:larger;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(111, 111, 118);
+
+}
+
+.aboutp p{
+  margin-top: 3vh;
+}
+
+
+.content{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  float: left;
+margin-right: 5vw;
+
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 25vw;
+  /*height: 300px;
+  width: 200px;*/
+  gap: 2vh;
+  margin-right: 6vw;
+
+
+}
+
+
+
+
+
+div.Team{
+  background-color: white;
+
+}
+div.Team h2{
+  margin-top: 40px;
+  text-align: center;
+  color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 30px;
+}
+
+.panel{
+  width: 800px;
+  height: 300px;
+  /*align-content: center;*/
+  background-color: #151417;
+  /*margin-left: 250px;
+  margin-top: 30px;*/
+  justify-content: center;
+  margin-left: 20vw;
+  margin-top: 2vh;
+  color: white;
+
+}
+
+
+
+.panel h4{
+  color: #a3def7;
+  font-weight:bold;
+  padding-top:30px;
+  padding-bottom:10px;
+  font-family:'Open Sans', sans-serif;
+}
+
+.panel h3{
+  padding-bottom: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.panel p{
+  font-size: 15px;
+  font-family:'Open Sans', sans-serif
+}
+
+
+.panel img{
+  float: left;
+  width: 260px;
+  height: 300px;
+}
+
+
+div.bp{
+  font-size: 50px;
+  background-color: #000;
+  color:white;
+  width: 70px;
+  height: 70px;
+  float: left;
+  text-align: center;
+  margin: 2vh 2vw;
+
+
+}
+
+div.bn{
+  font-size: 50px;
+  background-color: #000;
+  color:white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  float: right;
+  margin: 2vh 2vw;
+}
+
+/*nav a.current,
+.nav a:hover {
+  color: #a3def7;
+  font-weight: bold;
+}*/
+
+.bp:hover, .bn:hover{
+  background-color: white;
+  color: black;
+  border: black solid;
+}
+
+
+
+.teamcontainer{
+  display: flex;
+  flex-direction: row;
+justify-content: space-around;
+  margin-left: 5vw;
+  position: scroll;
+  margin: 2vh;
+}
+
+.teamp img{
+  height: 110px;
+  width: 100px;
+  margin-top: 10px;
+  align-self: center;
+}
+
+.teamcontainer > div{
+  background-color: white;
+  color:black;
+  width:150px;
+  height: 200px;
+  margin-bottom: 40px;
+  font-size: 10px;
+  border:#555 solid;
+  text-align: center;
+  font-family:'Open Sans', sans-serif;
+
+
+}
+
+.teamcontainer p{
+  color: #7acdf0;
+  margin-top: 3px;
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.teamcontainer div.teamp.active,
+.teamcontainer div:hover{
+  background-color: #151417;
+
+  color: #7acdf0;
+}
+
+.teamcontainer div.teamp.active,
+.teamcontainer div:hover{
+  background-color: #151417;
+
+  color: white;
+}
+
+.vacationbackground{
+  background-image: url('https://image-tc.galaxy.tf/wijpeg-cizichtskymszyep13jka8m1f/atardecer-morado.jpg?width=1920');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  height: 250vh;
+  color: #ffff;
+  background-attachment: fixed;
+
+
+
+}
+
+.morecontent h2{
+text-align: center;
+font-size: 40px;
+font-family: 'Open Sans', sans-serif;
+margin: 2vh;
+
+}
+
+.boxes{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30vh;
+}
+
+
+
+
+.box{
+  background-color: white;
+  width: 450px;
+  height: 350px;
+  color: black;
+  text-align: center;
+  margin: 2vh 2vw;
+}
+
+.box h3{
+  margin: 15px;
+  padding-top: 30px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 25px;
+
+
+}
+
+.box p{
+  font-size: 15px;
+  margin: 2vh 2vw;
+}
+
+
+.Whytravel h2{
+  margin-top: 2vh;
+text-align: center;
+margin-top: 40px;
+font-size: 20px;
+margin-bottom: 5vh;
+font-family: 'Open Sans', sans-serif;
+}
+
+.Whytravel h4{
+  margin: 2vh 5vw;
+  color: #62b3d5;
+line-height: 30px;
+
+font-weight: bold;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.Whytravel p{
+  color: #555;
+line-height: 30px;
+letter-spacing: 1.2px;
+margin-top: 30px;
+margin-bottom: 30px;
+margin-left: 70px;
+margin-right: 20px;
+}
+
+.awards{
+background-color:rgb(248, 250, 253);
+
+}
+
+.awards h3{
+
+  color: #555;
+line-height: 30px;
+letter-spacing: 1.2px;
+margin-top: 2vh;
+margin-bottom: 30px;
+margin-left: 70px;
+margin-right: 20px;
+
+}
+.awards h2{
+  margin-top: 2vh;
+  text-align: center;
+  padding-bottom: 2vh;
+  font-weight: bold;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+
+}
+
+.awardscontainer{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  gap: 5vw;
+
+}
+
+.award{
+  border: solid lightgrey;
+  background-color: #fff;
+  border-width: 2px;
+  border-radius: 10px;
+  width: 500px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2vh 2vw;
+
+}
+
+.MTN{
+  width: 25vw;
+  height: auto;
+}
+
+.ASTA{
+  width: 16vw;
+  height: auto;
+}
+
+.THA{
+  width: auto;
+  height: 24vh;
+}
+
+.WTA{
+  width: 10vw;
+  height: auto;
+}
+
+
+
+
+.destcontainer{
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: row;
+  margin: 2vw 2vw;
+}
+
+.destpic img{
+width: 30vw;
+height: auto;
+}
+
+.desttext h2{
+  margin-left: 40px;
+  font-weight: bolder;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.desttext p{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #555;
+
+}
+
+.destinput{
+  margin-top: 20px;
+  height: 50px;
+  width: 125px;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #007BFF;
+  border-color: #fff;
+  margin-left: 7vw;
+  font-weight: bold;
+  color: black;
+}
+
+.destinput:hover{
+  background-color: white;
+}
+.Readycontainer{
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: row;
+  margin: 2vw 2vw;
+}
+
+.Readypic img{
+width: 43vw;
+height: auto;
+}
+
+.Readytext h2{
+  margin-left: 40px;
+  font-weight: bolder;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Readytext p{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #555;
+
+}
+
+.readyinput{
+  margin-top: 20px;
+  height: 50px;
+  width: 125px;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: gray;
+  border-color: #fff;
+  margin-left: 7vw;
+  font-weight: bold;
+  color: black;
+}
+
+.readyinput:hover{
+  background-color: white;
+}
+
+.Readypic img{
+width: 43vw;
+height: auto;
+}
+
+.Readytext h2{
+  margin-left: 40px;
+  font-weight: bolder;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Readytext p{
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #555;
+
+}
+
+.readyinput{
+  margin-top: 20px;
+  height: 50px;
+  width: 125px;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 17px;
+  background-color: #007BFF;
+  border-color: #fff;
+  margin-left: 7vw;
+  font-weight: bold;
+  color: black;
+}
+
+.readyinput:hover{
+  background-color: white;
+}
+
+.links{
+  display: flex;
+  flex-direction: row;
+justify-content: space-around;
+  position: scroll;
+  gap: 10px;
+  background-color: white;
+  letter-spacing: 0.7px;
+  margin-top: 5vh;
+
+}
+
+
+.grouplink ul{
+  padding-bottom: 20px;
+  list-style-type: none;
+  line-height: 40px;
+  text-transform: uppercase;
+  color:#555;
+
+
+}
+
+.grouplink a{
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+
+}
+
+.grouplink h3{
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+}
+
+img#logo{
+  width: 20vw;
+  height: auto;
+}
+
+.grouplink a:hover {
+  color: #7acdf0;
+  font-weight: bold;
+}
