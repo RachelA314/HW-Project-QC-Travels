@@ -9,8 +9,6 @@ function fixNav() {
     }
 }
 
-
-
 const toggles = document.querySelectorAll('.faq-toggle')
 
 toggles.forEach(toggle => {
@@ -18,50 +16,6 @@ toggles.forEach(toggle => {
         toggle.parentNode.classList.toggle('active')
     })
 })
-
-/*Live User Filter
-const result = document.getElementById("result")
-const filter = document.getElementById("filter")
-const listItems = []
-
-getData()
-
-filter.addEventListener("input",(e) => filterData(e.target.value))
-
-async function getData(){
-   const res = await fetch(/*"https://randomuser.me/api?result=50")
-   const { results } = await res.json()
-  
- 
-   result.innerHTML = ""
-  
-   results.forEach(user => {
-       const li = document.createElement("li")
-
-       listItems.push(li)
-
-       li.innerHTML = `
-          <img src="${user.picture.large}" alt="${user.name.first}">
-          <div class="user-info">
-              <h4>${user.name.first} ${user.name.last}</h4>
-              <p>${user.location.city}, ${user.location.country}</p>
-         </div>
-        `
-       result.appendChild(li)
-    
-  
-  })
-}
-   function filterData(searchTerm){
-      listItems.forEach(item =>{
-        if(item.innerText.toLowerCase().includes(searchTerm.toLowerCase())){
-           item.classList.remove("hide")
-        }else{
-          item.classList.add("hide")
-        }
-        
-   })
-}*/
 
 //slide show
 let index = 0;
@@ -79,15 +33,4 @@ function displayImages() {
   images[index-1].style.display = "block";
   setTimeout(displayImages, 2000); 
 }
-/*
-function userButton() {
-  var button = document.getElementsByClassName("user-list");
-  
-  if (button.style.display = "none") {
-    button.style.display = "block";
-  } else {
-    button.style.display = "none";
-  }
-  
-}
-userButton();*/
+
