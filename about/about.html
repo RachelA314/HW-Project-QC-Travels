@@ -1,1 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="about.css" />
+  <link rel="shortcut icon" href="Logo.png" />
+  <title>QC Travels</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <h1 class="logo"><a href="/index.html">
+          <bold>QC Travels</bold>
+        </a></h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="loadingPlane.html" class=current>About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <input type="text" placeholder="Search..">
+    </div>
+  </nav>
+
+  <div class="hero">
+
+
+
+
+
+    <div class="About">
+      <h1>About Us</h1>
+    </div>
+    <div class="aboutp">
+      <h2>Cultivating Refined Travel Experiences</h2>
+      <div class=content>
+        <div class="text">
+          <p>
+            At QC Travels, our team of seasoned travelers is committed to providing a sophisticated level of expertise
+            in international exploration. Led by, our founder, we bring a wealth of experience from navigating the
+            world's bustling cities to immersing ourselves in serene natural landscapes and diverse cultures.
+          </p>
+          <p>Our focus is on delivering personalized travel experiences that surpass the ordinary. We pride ourselves on
+            a mature and professional approach to crafting bespoke journeys, ensuring each itinerary is meticulously
+            planned and executed. Consider us your reliable partners in turning travel aspirations into refined and
+            memorable realities. Join us, and let's elevate your travel experiences together.</p>
+        </div>
+        <div class="photos">
+          <img class="warm" src="warm vacation.jpeg">
+          <img class="cold" src="winter vacation.jpeg">
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="Team">
+      <h2>Our Team</h2>
+      <div class="panel">
+        <img src='alex.png'>
+        <div class="panelcontent">
+          <h4>INDEPENDENT TRAVEL CONSULTANT</h4>
+          <h3>Alexandra Chavez</h3>
+          <p>Alex is our seasoned Cultural Explorer, passionate about uncovering the rich tapestry of traditions and
+            histories across the globe. With an extensive background in anthropology and a love for immersive
+            experiences, Alex crafts itineraries that showcase the authentic essence of destinations. Whether it's
+            exploring ancient ruins, attending local festivals, or savoring regional delicacies, Alex ensures each
+            journey is a cultural odyssey.</p>
+        </div>
+      </div>
+      <div class=panel>
+        <img src='cody.png'>
+        <h4>INDEPENDENT TRAVEL CONSULTANT</h4>
+        <h3>Cody Frucht</h3>
+        <p>Meet Cody, our Adventure Aficionado, dedicated to curating adrenaline-pumping experiences for the
+          thrill-seekers. From challenging treks to exhilarating water sports, Cody's expertise lies in designing
+          adventures that push boundaries. With a passion for the outdoors, Cody ensures that every itinerary is infused
+          with excitement, ensuring travelers return with tales of daring exploits.</p>
+      </div>
+      <div class=panel>
+        <img src='fahmida.png'>
+        <h4>INDEPENDENT TRAVEL CONSULTANT</h4>
+        <h3>Fahmida Khan</h3>
+        <p>Fahmida is our Business Travel Strategist, adept at orchestrating seamless and efficient travel solutions for
+          corporate clients. With a background in corporate travel management, Fahmida understands the demands of the
+          business world. From optimizing travel schedules to providing personalized services, Fahmida ensures that
+          business trips are both productive and stress-free.</p>
+      </div>
+      <div class=panel>
+        <img src='rabsa.png'>
+        <h4>INDEPENDENT TRAVEL CONSULTANT</h4>
+        <h3>Rabsa Islam</h3>
+        <p>Rabsa, our Luxury Travel Connoisseur, specializes in crafting opulent and refined experiences for discerning
+          travelers. With an eye for elegance and a penchant for luxury, Rabsa ensures that every aspect of the journey,
+          from accommodations to private excursions, exudes sophistication. For those seeking the epitome of comfort and
+          indulgence, Rabsa is the go-to consultant.</p>
+      </div>
+      <div class=panel>
+        <img src='rachel.png'>
+        <h4>INDEPENDENT TRAVEL CONSULTANT</h4>
+        <h3>Rachel Archer</h3>
+        <p>Rachel, our Family Vacation Specialist, focuses on creating memorable and stress-free experiences for
+          families. With a deep understanding of the unique dynamics of family travel, Rachel designs itineraries that
+          cater to all members. From kid-friendly activities to family-friendly accommodations, Isabel ensures that
+          every family adventure is filled with joy, bonding, and unforgettable moments.</p>
+      </div>
+      <div class=bp><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+      <div class=bn><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+      <div class=teamcontainer>
+        <div class="teamp" onclick="currentPanel(1)">
+          <img src='alex.png'>
+          <p>INDEPENDENT TRAVEL CONSULTANT</p>
+          <h3>Alexandra Chavez</h3>
+        </div>
+        <div class="teamp" onclick="currentPanel(2)">
+          <img src='cody.png'>
+          <p>INDEPENDENT TRAVEL CONSULTANT</p>
+          <h3>Cody Frucht</h3>
+        </div>
+        <div class="teamp" onclick="currentPanel(3)">
+          <img src='fahmida.png'>
+          <p>INDEPENDENT TRAVEL CONSULTANT</p>
+          <h3>Fahmida Khan</h3>
+        </div>
+        <div class="teamp" onclick="currentPanel(4)">
+          <img src='rabsa.png'>
+          <p>INDEPENDENT TRAVEL CONSULTANT</p>
+          <h3>Rabsa Islam</h3>
+        </div>
+
+        <div class="teamp" onclick="currentPanel(5)">
+          <img src='rachel.png'>
+          <p>INDEPENDENT TRAVEL CONSULTANT</p>
+          <h3>Rachel Archer</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="vacationbackground">
+      <div class="morecontent">
+        <h2>Our Mission</h2>
+        <div class=boxes>
+          <div class="box" id="box1">
+            <h3>Personalized Experience</h3>
+            <p>Our mission is to deliver a personalized travel experience that surpasses expectations. We understand
+              that each traveler is unique, and our commitment is to craft tailor-made itineraries that align with
+              individual preferences, interests, and aspirations. From the moment you share your travel dreams with us,
+              our team works tirelessly to ensure that every detail is thoughtfully considered, resulting in an
+              experience that is truly one-of-a-kind.</p>
+          </div>
+          <div class="box" id="box2">
+            <h3>Unrivaled Expertise</h3>
+            <p>Central to our mission is the promise of unrivaled expertise. Our team consists of specialists in various
+              realms of travel, each bringing a wealth of knowledge and experience to the table. Whether you seek
+              cultural immersion, adventure, luxury, business efficiency, or family-friendly vacations, our experts are
+              dedicated to providing insights, recommendations, and arrangements that showcase the best a destination
+              has to offer. We pride ourselves on being at the forefront of travel trends and continuously expanding our
+              knowledge base to enhance your experience.
+
+            </p>
+          </div>
+          <div class="box" id="box3">
+            <h3>Seamless Service</h3>
+            <p>We are committed to providing a seamless and stress-free travel experience for our clients. From the
+              initial planning stages to the return journey, our mission is to handle every detail with precision and
+              professionalism. Whether it's coordinating complex itineraries, ensuring smooth logistics, or anticipating
+              and addressing any potential challenges, our goal is to make your travel effortless, allowing you to focus
+              on creating cherished memories. Your satisfaction and comfort are paramount, and our team is dedicated to
+              exceeding your expectations at every turn.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="Whytravel">
+      <h2>Why Should You Consult in a Travel Agent?</h2>
+      <h4>Expertise and Insider Knowledge:</h4>
+
+      <ul>
+        <li>
+          <p>Local Insights: Travel consultants often have firsthand experience and local knowledge, providing valuable
+            insights into destinations, hidden gems, and off-the-beaten-path experiences that may not be easily
+            accessible through online resources.</p>
+        </li>
+        <li>
+          <p>Specializations: Consultants often specialize in specific types of travel, such as luxury, adventure,
+            cultural, or family-focused trips, ensuring that you receive advice tailored to your interests.</p>
+        </li>
+      </ul>
+      <h4>Time and Stress Savings:</h4>
+      <ul>
+        <li>
+          <p>Efficient Planning: Planning a trip can be time-consuming, from researching destinations to arranging
+            accommodations, transportation, and activities. Travel consultants streamline the process, saving you time
+            and alleviating the stress associated with organizing complex itineraries.</p>
+        </li>
+        <li>
+          <p>Problem Resolution: In the event of travel disruptions, unforeseen circumstances, or changes to plans, a
+            travel consultant can act as a valuable advocate, helping to resolve issues and mitigate the impact on your
+            trip.</p>
+        </li>
+      </ul>
+      <h4>Personalization and Customization:</h4>
+      <ul>
+        <li>
+          <p>Tailored Experiences: Travel consultants take the time to understand your preferences, interests, and
+            travel goals, allowing them to craft personalized itineraries that match your unique needs and desires.</p>
+        </li>
+        <li>
+          <p>Access to Exclusive Amenities: Many consultants have access to exclusive perks, upgrades, and amenities
+            that may not be available to the general public, enhancing the overall travel experience.</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class=awards>
+      <h2>Awards</h2>
+      <h3>As a member of the International society of Travel Agents, we are honored to be a recipient of these awards.
+      </h3>
+      <div class=awardscontainer>
+        <div class=award>
+          <img src='MTN.png' class=MTN>
+        </div>
+        <div class=award>
+          <img src='ASTA.jpeg' class=ASTA>
+        </div>
+        <div class=award>
+          <img src='THA.png' class=THA>
+        </div>
+        <div class=award>
+          <img src='WTA.jpeg' class=WTA>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="destcontainer">
+      <div class="desttext">
+        <h2>Need a destination?</h2>
+        <p>Let us guide you to the ideal destination, ensuring every moment of your journey is as unique as you are!
+        </p>
+        <div class="quizbutton">
+          <a href="quiz.html">
+            <input class=destinput type="button" value="Take a quiz">
+          </a>
+        </div>
+      </div>
+      <div class="destpic">
+        <img src='girl taking quiz.jpeg'>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="Readycontainer">
+      <div class="Readypic">
+        <img src='peoplerelaxing.jpeg'>
+      </div>
+      <div class="Readytext">
+        <h2>Ready for your trip?</h2>
+        <p>Contact us today, and let our team of seasoned travel consultants curate a seamless and unforgettable journey
+          tailored to your desires. </p>
+        <a href=contact.html>
+          <input class=readyinput type="button" value="Lets go!">
+        </a>
+      </div>
+    </div>
+    <hr>
+    <footer>
+      <div class=links>
+        <div class=grouplink>
+          <img src=Logo.png id=logo>
+
+        </div>
+        <div class=grouplink>
+          <h3>FIND US</h3>
+          <ul>
+            <li><a>Facebook</a></li>
+            <li><a>Instagram</a></li>
+            <li><a>Twitter</a></li>
+            <li><a>Pinterest</a></li>
+            <li><a>Youtube</a></li>
+          </ul>
+        </div>
+        <div class=grouplink>
+          <h3>SITE LINKS</h3>
+          <ul>
+            <li><a>Traveler Resources Hub</a></li>
+            <li><a>Frequenty Asked Questions</a></li>
+            <li><a>Terms & Conditions</a></li>
+            <li><a>Privacy Policy</a></li>
+            <li><a>Travel Protection</a></li>
+          </ul>
+        </div>
+        <div class=grouplink>
+          <h3>SERVICES</h3>
+          <ul>
+            <li><a>Cruises</a></li>
+            <li><a>Hotels</a></li>
+            <li><a>Romantic Vacations</a></li>
+            <li><a>Family Vacations</a></li>
+            <li><a>Babymoon</a></li>
+          </ul>
+        </div>
+        <div class=grouplink>
+          <h3>DESTINATIONS</h3>
+          <ul>
+            <li><a>Dominican Republic</a></li>
+            <li><a>Italy</a></li>
+            <li><a>Spain</a></li>
+            <li><a>South Korea</a></li>
+            <li><a>Dubai</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </footer>
+
+
+
+  </div>
+
+  <script src="about.js"></script>
+</body>
+
+</html>
